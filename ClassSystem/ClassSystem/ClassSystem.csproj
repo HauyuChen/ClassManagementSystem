@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5811CB6-DB70-4E21-B47A-46D540756768}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassSystem</RootNamespace>
+    <AssemblyName>ClassSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ClassSystem.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="SqlHelper.cs" />
+    <Page Include="AdminUser\Admin_PassAlter_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\ANN_Alter_Info_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\ANN_Alter_Task_Window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\ANN_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生信息管理\SI_Alter_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生信息管理\SI_Del_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生信息管理\SI_New_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生信息管理\SI_Search_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生成绩管理\SG_Alter_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生成绩管理\SG_Del_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生成绩管理\SG_New_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\学生成绩管理\SG_Search_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\班费支出管理\CC_Alter_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\班费支出管理\CC_Del_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\班费支出管理\CC_New_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\班费支出管理\CC_Search_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\课程信息管理\CI_Alter_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\课程信息管理\CI_Del_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\课程信息管理\CI_New_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminUser\课程信息管理\CI_Search_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommonUser\CCostDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommonUser\CCourseInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommonUser\CInfoAlterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommonUser\CM_ANN_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommonUser\CStuGradePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CommonUser\CStuInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AdminUser\Admin_PassAlter_Page.xaml.cs">
+      <DependentUpon>Admin_PassAlter_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\ANN_Alter_Info_Window.xaml.cs">
+      <DependentUpon>ANN_Alter_Info_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\ANN_Alter_Task_Window.xaml.cs">
+      <DependentUpon>ANN_Alter_Task_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\ANN_Page.xaml.cs">
+      <DependentUpon>ANN_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生信息管理\SI_Alter_Page.xaml.cs">
+      <DependentUpon>SI_Alter_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生信息管理\SI_Del_Page.xaml.cs">
+      <DependentUpon>SI_Del_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生信息管理\SI_New_Page.xaml.cs">
+      <DependentUpon>SI_New_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生信息管理\SI_Search_Page.xaml.cs">
+      <DependentUpon>SI_Search_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生成绩管理\SG_Alter_Page.xaml.cs">
+      <DependentUpon>SG_Alter_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生成绩管理\SG_Del_Page.xaml.cs">
+      <DependentUpon>SG_Del_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生成绩管理\SG_New_Page.xaml.cs">
+      <DependentUpon>SG_New_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\学生成绩管理\SG_Search_Page.xaml.cs">
+      <DependentUpon>SG_Search_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\班费支出管理\CC_Alter_Page.xaml.cs">
+      <DependentUpon>CC_Alter_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\班费支出管理\CC_Del_Page.xaml.cs">
+      <DependentUpon>CC_Del_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\班费支出管理\CC_New_Page.xaml.cs">
+      <DependentUpon>CC_New_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\班费支出管理\CC_Search_Page.xaml.cs">
+      <DependentUpon>CC_Search_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\课程信息管理\CI_Alter_Page.xaml.cs">
+      <DependentUpon>CI_Alter_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\课程信息管理\CI_Del_Page.xaml.cs">
+      <DependentUpon>CI_Del_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\课程信息管理\CI_New_Page.xaml.cs">
+      <DependentUpon>CI_New_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser\课程信息管理\CI_Search_Page.xaml.cs">
+      <DependentUpon>CI_Search_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminWindow.xaml.cs">
+      <DependentUpon>AdminWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommonUser\CCostDetailPage.xaml.cs">
+      <DependentUpon>CCostDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUser\CCourseInfoPage.xaml.cs">
+      <DependentUpon>CCourseInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUser\CInfoAlterPage.xaml.cs">
+      <DependentUpon>CInfoAlterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUser\CM_ANN_Page.xaml.cs">
+      <DependentUpon>CM_ANN_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUser\CStuGradePage.xaml.cs">
+      <DependentUpon>CStuGradePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUser\CStuInfoPage.xaml.cs">
+      <DependentUpon>CStuInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MWindow.xaml.cs">
+      <DependentUpon>MWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\BTNLOGIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\bj001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\Alter.png" />
+    <Resource Include="IMG\Del.png" />
+    <Resource Include="IMG\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\zhuru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\AlterPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AdminUser\bj001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IMG\C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ClassSystem.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,36 @@
+﻿<Page x:Class="ClassSystem.AdminUser.SI_New_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+	Title="SI_New_Page">
+
+    <Grid>
+        <Label Content="新增学生信息" Height="45" HorizontalAlignment="Left" Margin="227,40,0,0" Name="label1" VerticalAlignment="Top" FontSize="22" FontWeight="Bold" />
+        <Label Content="学号：" Height="28" HorizontalAlignment="Left" Margin="105,114,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="姓名：" Height="28" HorizontalAlignment="Left" Margin="315,114,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="职务：" Height="28" HorizontalAlignment="Left" Margin="104,158,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="性别：" Height="28" HorizontalAlignment="Left" Margin="315,158,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="出生日期：" Height="28" HorizontalAlignment="Left" Margin="292,204,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="身份证号：" Height="28" HorizontalAlignment="Left" Margin="80,250,0,0" Name="label7" VerticalAlignment="Top" />
+        <Label Content="银行卡号：" Height="28" HorizontalAlignment="Left" Margin="80,295,0,0" Name="label8" VerticalAlignment="Top" />
+        <Label Content="手机号码：" Height="28" HorizontalAlignment="Left" Margin="80,204,0,0" Name="label9" VerticalAlignment="Top" />
+        <Label Content="宿舍号：" Height="28" HorizontalAlignment="Left" Margin="303,249,0,0" Name="label10" VerticalAlignment="Top" />
+        <Label Content="QQ号码：" Height="28" HorizontalAlignment="Left" Margin="295,295,0,0" Name="label11" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="150,116,0,0" Name="TB_N_Sno" VerticalAlignment="Top" Width="121" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="363,116,0,0" Name="TB_N_Sname" VerticalAlignment="Top" Width="120" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="150,160,0,0" Name="CB_N_Srole" VerticalAlignment="Top" Width="120"/>
+
+        <RadioButton Content="男" Height="16" HorizontalAlignment="Left" Margin="363,163,0,0" Name="RB_N_Man" VerticalAlignment="Top" Width="34" />
+        <RadioButton Content="女" Height="16" HorizontalAlignment="Left" Margin="403,163,0,0" Name="RN_N_Woman" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="150,206,0,0" Name="TB_N_Smobile" VerticalAlignment="Top" Width="120" />
+        <DatePicker Height="25" HorizontalAlignment="Left" Margin="363,204,0,0" Name="DP_Data" VerticalAlignment="Top" Width="119" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="150,252,0,0" Name="TB_N_Sident" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="363,251,0,0" Name="TB_N_Sdorm" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="150,297,0,0" Name="TB_N_Scard" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="363,297,0,0" Name="TB_N_Sqq" VerticalAlignment="Top" Width="120" />
+        <Button Content="提交" Height="30" HorizontalAlignment="Left" Margin="244,345,0,0" Name="BTN_N_Sub" VerticalAlignment="Top" Width="105" Click="BTN_N_Sub_Click" />
+    </Grid>
+</Page>

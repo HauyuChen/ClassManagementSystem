@@ -1,0 +1,26 @@
+﻿<Page x:Class="ClassSystem.AdminUser.学生成绩管理.SG_Alter_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+	Title="SG_Alter_Page">
+
+    <Grid>
+        <Label Content="学号：" Height="28" HorizontalAlignment="Left" Margin="107,87,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="修改学生成绩信息" Height="37" HorizontalAlignment="Left" Margin="221,27,0,0" Name="label2" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" />
+        <Label Content="姓名：" Height="28" HorizontalAlignment="Left" Margin="317,86,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="课程编号：" Height="28" HorizontalAlignment="Left" Margin="83,132,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="课程名称：" Height="28" HorizontalAlignment="Left" Margin="293,131,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="成绩：" Height="28" HorizontalAlignment="Left" Margin="317,178,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="学分：" Height="28" HorizontalAlignment="Left" Margin="107,177,0,0" Name="label7" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="159,89,0,0" Name="TB_SG_ALTER_SNO" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="369,89,0,0" Name="TB_SG_ALTER_SNAME" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="159,135,0,0" Name="TB_SG_ALTER_CNO" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="369,134,0,0" Name="TB_SG_ALTER_CNAME" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="159,180,0,0" Name="TB_SG_ALTER_CCREDIT" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="369,180,0,0" Name="TB_SG_ALTER_GRADE" VerticalAlignment="Top" Width="120" />
+        <Button Content="确认修改" Height="23" HorizontalAlignment="Left" Margin="262,255,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+    </Grid>
+</Page>

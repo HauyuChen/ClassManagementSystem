@@ -1,0 +1,24 @@
+﻿<Page x:Class="ClassSystem.AdminUser.班费支出管理.CC_New_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="600"
+	Title="CC_New_Page">
+
+    <Grid>
+        <Label Content="使用时间：" Height="28" HorizontalAlignment="Left" Margin="115,86,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="新增班费支出记录" Height="37" HorizontalAlignment="Left" Margin="221,27,0,0" Name="label2" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" />
+        <Label Content="使用项目：" Height="28" HorizontalAlignment="Left" Margin="115,130,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="消费地点：" Height="28" HorizontalAlignment="Left" Margin="115,173,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="参与人数：" Height="28" HorizontalAlignment="Left" Margin="313,86,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="消费金额：" Height="28" HorizontalAlignment="Left" Margin="115,217,0,0" Name="label7" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="182,88,0,0" Name="TB_CC_NEW_COSTTIME" VerticalAlignment="Top" Width="109" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="381,88,0,0" Name="TB_CC_NEW_JOINNUM" VerticalAlignment="Top" Width="93" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="182,132,0,0" Name="TB_CC_NEW_COSTPROJ" VerticalAlignment="Top" Width="292" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="182,175,0,0" Name="TB_CC_NEW_COSTPLACE" VerticalAlignment="Top" Width="292" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="182,219,0,0" Name="TB_CC_NEW_COSTMONEY" VerticalAlignment="Top" Width="120" />
+        <Button Content="确认添加" Height="23" HorizontalAlignment="Left" Margin="269,272,0,0" Name="BTN_CC_NEW" VerticalAlignment="Top" Width="75" Click="BTN_CC_NEW_Click" />
+    </Grid>
+</Page>
